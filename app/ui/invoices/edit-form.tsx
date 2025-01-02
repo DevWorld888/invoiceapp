@@ -10,7 +10,7 @@ import {
 import Link from 'next/link';
 import { Button } from '@/app/ui/button';
 import { State, updateInvoice } from '@/app/lib/actions';
-import { useActionState } from 'react';
+// import { useActionState } from 'react';
 
 export default function EditInvoiceForm({
   invoice,
@@ -19,7 +19,7 @@ export default function EditInvoiceForm({
   invoice: InvoiceForm;
   customers: CustomerField[];
 }) {
-  const initialState: State = { message: null, errors: {} };
+  // const initialState: State = { message: null, errors: {} };
   const updateInvoiceWithId = updateInvoice.bind(null, invoice.id);
   // const [state, formAction] = useActionState(updateInvoiceWithId, initialState);
   return (
